@@ -31,9 +31,12 @@ const result = users.find(user => user.email === account.email && user.password 
 
 const response = {
   name: null,
-  status: true
+  status: true,
+  email: null
 }
-
+if (account.hold) {
+  response.email = account.email
+}
 if (result) {
   response.name = result.firstName
 } else {
