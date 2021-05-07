@@ -6,10 +6,16 @@
           <div class="col-10 mx-auto my-3" style="text-align: center;">
             <h3 class="card-title">Account Login</h3>
           </div>
-          <div class="col-10 my-3 mx-auto">
+          <div class="col-10 mx-auto mb-2">
+            <i class="fas fa-envelope"></i> User name
+          </div>
+          <div class="col-10 mb-4 mx-auto">
             <input class="form-control" type="email" name="email" id="email" placeholder="Email">
           </div>
-          <div class="col-10 my-3 mx-auto">
+          <div class="col-10 mx-auto mb-2">
+            <i class="fas fa-unlock-alt"></i> Password
+          </div>
+          <div class="col-10 mb-4 mx-auto">
             <input class="form-control" type="password" name="password" id="password" placeholder="Password">
           </div>
           {{#unless result.status}}
